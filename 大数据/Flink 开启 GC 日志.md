@@ -11,9 +11,9 @@ env.java.opts: -Xloggc:<LOG_DIR>/gc.log -XX:+PrintGCApplicationStoppedTime -XX:+
 
 `-XX:+PrintGCDetails` 开启打印 GC 详情
 
-`-XX:+PrintGCTimeStamps` 打印 GC 时间戳
+`-XX:+PrintGCTimeStamps` 打印 GC 时间戳（相对 JVM 启动时候的时间）
 
-`-XX:+PrintGCDateStamps` 打印 GC 日期戳
+`-XX:+PrintGCDateStamps` 打印 GC 日期戳（get time of day）
 
 `-XX:+UseGCLogFileRotation` 开启滚动日志
 
