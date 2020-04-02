@@ -1,6 +1,6 @@
 # WeakReference  在 WeakHashMap 和 ThreadLocalMap 中的使用
 
-`WeakHashMap`
+WeakHashMap
 ```java
 static class Entry extends WeakReference<ThreadLocal<?>> {
            /** The value associated with this ThreadLocal. */
@@ -13,7 +13,7 @@ static class Entry extends WeakReference<ThreadLocal<?>> {
        }
 ```
 
-`TheadLocalMap`
+TheadLocalMap
 ```java
  private static class Entry<K,V> extends WeakReference<Object> implements Map.Entry<K,V> {
         V value;
